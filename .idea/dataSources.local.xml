@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="mmall@localhost" uuid="6b40416a-1547-4a3b-a949-9bbda3011544">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>mmall_learning.*</schema-pattern>
+      <default-schemas>mmall_learning.*</default-schemas>
+    </data-source>
+  </component>
+</project>
