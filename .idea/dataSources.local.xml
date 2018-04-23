@@ -2,10 +2,16 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="mmall@localhost" uuid="6b40416a-1547-4a3b-a949-9bbda3011544">
+      <database-info product="MySQL" version="5.5.27" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.45 ( Revision: 9131eefa398531c7dc98776e8a3fe839e544c5b2 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
-      <schema-pattern>mmall_learning.*</schema-pattern>
-      <default-schemas>mmall_learning.*</default-schemas>
+      <introspection-schemas>*:mmall_learning</introspection-schemas>
+      <resolve-scope>*:mmall_learning</resolve-scope>
+      <unqualified-resolve-schemas>*:mmall_learning</unqualified-resolve-schemas>
     </data-source>
   </component>
 </project>

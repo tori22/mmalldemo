@@ -213,7 +213,7 @@ public class ProductServiceImpl implements IProductService {
             Category category = categoryMapper.selectByPrimaryKey(categoryId);
             if(category == null && StringUtils.isBlank(keyword)){
                 //没有该分类也没有关键字
-                PageHelper.startPage(pageNum, pageSize);
+                PageHelper.startPage(pageNum, pageSize);//startPage是告诉拦截器说我要开始分页了，分页参数是这两个
                 List<ProductListVo> productListVoList = Lists.newArrayList();
                 PageInfo pageInfo = new PageInfo(productListVoList);
                 return ServerResponse.createBySuccess(pageInfo);
